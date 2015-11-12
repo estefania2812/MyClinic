@@ -1,0 +1,58 @@
+package control;
+
+import java.util.ArrayList;
+
+import com.example.ourclinic.R;
+import com.example.ourclinic.R.id;
+import com.example.ourclinic.R.layout;
+import com.example.ourclinic.R.menu;
+
+import model.backend.BackendFactory;
+import model.datasource.DatabaseList;
+import entities.Illness;
+import entities.Medicine;
+import entities.Password;
+import entities.Patient;
+import entities.Visit;
+import android.R.bool;
+import android.support.v7.app.ActionBarActivity;
+import android.app.AlertDialog;
+import android.app.ListFragment;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.os.Message;
+import android.os.Messenger;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class IllnessesListViewDemoFragment extends ListFragment {
+    private ArrayList <Illness> iItems;        // ListView items list
+    Context context=null;
+
+	//====================================================================================
+    public IllnessesListViewDemoFragment(ArrayList<Illness> ill) {
+        // initialize the items list       		
+    	iItems=new ArrayList<Illness>();
+        iItems= ill;
+	}
+
+	//====================================================================================
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+       // initialize and set the list adapter
+        setListAdapter(new IllnessesListViewDemoAdapter(getActivity(), iItems));
+    }    
+	//====================================================================================
+	
+}

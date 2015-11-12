@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/visit_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="control.VisitActivity" >
+
+<LinearLayout
+    style="@style/AppBaseTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@color/White_FloralWhite" >
+
+    <Button
+        android:id="@+id/saveVis_button"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:background="@color/Blue_SlateBlue"
+        android:text="Save" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@id/docLogin_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/visNum_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number:"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/visNum_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="@string/_00000000"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/visDate_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <Data.CustomDatePicker
+            android:id="@+id/visDate_customDatePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CustomDatePicker"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/visTime_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour:"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <Data.CustomTimePicker
+            android:id="@+id/visTime_customTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:text="CustomTimePicker"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/visDoctor_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/visDocLicence_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/visPat_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/visPatID_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/visOpinion_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_opinion_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/visOpinion_editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="@color/Blue_SlateBlue" >
+
+        <requestFocus />
+    </EditText>
+    
+    <LinearLayout
+        android:id="@+id/radio_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="InefficientWeight" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            tools:ignore="UselessParent" >
+
+             <RadioButton
+                 android:id="@+id/addMeds_RadioButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/border_selector"
+                 android:button="@null"
+                 android:checked="true"
+                 android:gravity="center"
+                 android:onClick="onSelectedButton"
+                 android:text="Medicines"
+                 android:textColor="@drawable/textselector" />
+
+              <RadioButton
+                  android:id="@+id/addIlls_RadioButton"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/border_selector"
+                  android:button="@null"
+                  android:checked="true"
+                  android:gravity="center"
+                  android:onClick="onSelectedButton"
+                  android:text="Illnesses"
+                  android:textColor="@drawable/textselector" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="560.88"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+    
+</LinearLayout>

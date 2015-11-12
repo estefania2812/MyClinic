@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="control.PatientDetailsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patId_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patId_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patFirstName_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patFirstName_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patLastName_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patLastName_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patBirthDate_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_date_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patBirthDate_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patGender_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patGender_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patAddress_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patAddress_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patTelephone_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telephone_number_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patTelephone_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patMail_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patMail_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/patBankAccount_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_account_"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+        <TextView
+            android:id="@+id/patBankAccount_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:textColor="@color/Blue_SlateBlue"
+            android:textSize="@dimen/abc_action_bar_title_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.81"
+        android:src="@drawable/icon_patientt" />
+
+</LinearLayout>

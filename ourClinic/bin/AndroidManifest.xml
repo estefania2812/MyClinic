@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ourclinic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="control.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="control.DoctorLoginActivity"
+            android:label="@string/title_activity_doctor_login" >
+        </activity>
+        <activity
+            android:name="control.MenuForDocActivity"
+            android:label="@string/title_activity_menu_for_doc" >
+        </activity>
+        <activity
+            android:name="control.VisitActivity"
+            android:label="@string/title_activity_visit" >
+        </activity>
+        <activity
+            android:name="control.VisitListActivity"
+            android:label="@string/title_activity_visit_list" >
+        </activity>
+        <activity
+            android:name="control.InfoVisitActivity"
+            android:label="@string/title_activity_info_visit" >
+        </activity>
+        <activity
+            android:name=".DocLoginActivity"
+            android:label="@string/title_activity_doc_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".VisitsListActivity"
+            android:label="@string/title_activity_visits_list"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="control.PatientInfoActivity"
+            android:label="@string/title_activity_patient_info" >
+        </activity>
+        <activity
+            android:name="control.PatientDetailsActivity"
+            android:label="@string/title_activity_patient_details" >
+        </activity>
+        <activity
+            android:name="control.OptionsForPatActivity"
+            android:label="@string/title_activity_options_for_pat" >
+        </activity>
+        <activity
+            android:name="control.ScheduleForDocActivity"
+            android:label="@string/title_activity_schedule_for_doc" >
+        </activity>
+        <activity
+            android:name="control.MyListActivity"
+            android:label="@string/title_activity_my_list" >
+        </activity>
+        <activity
+            android:name=".NisuiActivity"
+            android:label="@string/title_activity_nisui" >
+        </activity>
+    </application>
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

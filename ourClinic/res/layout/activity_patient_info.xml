@@ -1,0 +1,151 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5" >
+ <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0.94"
+        android:orientation="horizontal">
+
+       <TextView
+           android:id="@+id/logedDoc_textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"                
+           android:text="Loged doctor:" />
+
+       <TextView
+           android:id="@+id/logedDoc_textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/Blue_SteelBlue"
+           android:textSize="15sp" />
+
+       <TextView
+           android:id="@+id/treatedPatient_textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="          Treated patient:"
+           android:textSize="15sp" />
+
+       <TextView
+           android:id="@+id/treatedPatient_textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/Blue_SteelBlue"
+           android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0.94"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addVis_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_background"
+            android:text="New Visit  +" />
+
+    </LinearLayout>
+        
+      
+    <LinearLayout
+        android:id="@+id/radio_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.96"
+        android:weightSum="2"
+        tools:ignore="InefficientWeight" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            tools:ignore="UselessParent" >
+
+               <RadioButton
+                   android:id="@+id/HistoricMedicinesForPat_RadioButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="@drawable/border_selector"
+                   android:button="@null"
+                   android:checked="true"
+                   android:gravity="center"
+                   android:onClick="onSelectedButton"
+                   android:text="Medicines"
+                   android:textSize="12sp"
+                   android:textColor="@drawable/textselector" />
+
+              <RadioButton
+                  android:id="@+id/HistoricIllnessesForPat_RadioButton"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/border_selector"
+                  android:button="@null"
+                  android:checked="true"
+                  android:gravity="center"
+                  android:onClick="onSelectedButton"
+                  android:text="Illnesses"
+                  android:textSize="12sp"                 
+                  android:textColor="@drawable/textselector" />
+
+            <RadioButton
+                android:id="@+id/HistoricVisitsForPat_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:onClick="onSelectedButton"
+                android:text="Visits"
+                android:textSize="12sp"                
+                android:textColor="@drawable/textselector" />
+
+              <RadioButton
+             android:id="@+id/patientDetails_RadioButton"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="@drawable/border_selector"
+             android:button="@null"
+             android:checked="true"
+             android:gravity="center"
+             android:onClick="onSelectedButton"
+             android:text="@string/patient_details"
+             android:textSize="12sp"                
+             android:textColor="@drawable/textselector" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_weight="1.62"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+  
+
+</LinearLayout>
+  
